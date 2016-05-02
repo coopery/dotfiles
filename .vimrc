@@ -116,6 +116,8 @@ noremap / :set hlsearch<cr>/
 noremap ? :set hlsearch<cr>?
 noremap * :set hlsearch<cr>*
 
+let g:netrw_dirhistmax = 0
+
 " to enable word wrap at column n
 " set wrap
 " set linebreak
