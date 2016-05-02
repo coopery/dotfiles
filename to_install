@@ -1,0 +1,26 @@
+vim
+git
+google-chrome-stable
+vlc
+mopidy
+mopidy-spotify
+ncmpcpp
+transmission
+
+
+## Not apt-getable but necessary
+spotify
+
+
+## i3
+rofi
+playerctl
+feh
+arandr
+i3blocks
+lxappearance
+
+
+## fonts
+Font Awesome
+System San Francisco
