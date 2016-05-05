@@ -22,10 +22,10 @@ ignore_config=('.' '..')
 for filename in .config/*; do
     # Ignore names in ignore_config
     if [[ ! " ${ignore_config[@]} " =~ " $filename " ]]; then
-        echo Removing: "~/.config"/$filename
+        echo Removing: "~"/$filename
         rm -rf ~/.config/$filename
-        echo Creating: "~/.config"/$filename "-> ~/.config/"${PWD##*/}/$filename
-        ln -s $PWD/$filename ~/.config/$filename
+        echo Creating: "~"/$filename "-> ~/.config/"${PWD##*/}/$filename
+        ln -s $PWD/$filename ~/$filename
     else
         echo Ignoring: .config/$filename;
     fi
