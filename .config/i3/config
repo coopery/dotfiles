@@ -183,11 +183,12 @@ bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightness
 
 # Media player controls
-bindsym XF86AudioPlay exec playerctl play
-bindsym XF86AudioPause exec playerctl pause
-bindsym XF86AudioNext exec playerctl next
-bindsym XF86AudioPrev exec playerctl previous
+bindsym XF86AudioPlay exec ~/.config/i3/scripts/playpause
+bindsym XF86AudioPause exec ~/.config/i3/scripts/pause
+bindsym XF86AudioNext exec ~/.config/i3/scripts/next
+bindsym XF86AudioPrev exec ~/.config/i3/scripts/prev
 
 exec google-chrome
+exec mopidy
 exec_always feh --bg-scale ~/wallpaper
 exec_always xrandr --output HDMI1 --off --output LVDS1 --mode 1366x768 --pos 0x0 --rotate normal --output VIRTUAL1 --off --output DP1 --off --output VGA1 --off
