@@ -1,6 +1,6 @@
 vim
 git
-google-chrome-stable
+htop
 vlc
 mopidy
 mopidy-spotify
@@ -9,6 +9,7 @@ transmission
 
 
 ## Not apt-getable but necessary
+google-chrome-stable
 spotify
 
 
