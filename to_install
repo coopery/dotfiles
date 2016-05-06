@@ -1,15 +1,15 @@
 vim
 git
 htop
-vlc
+xbacklight
 mopidy
-mopidy-spotify
 ncmpcpp
 transmission
 
 
 ## Not apt-getable but necessary
 google-chrome-stable
+mopidy-spotify
 spotify
 
 
