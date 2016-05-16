@@ -1,4 +1,4 @@
 #!/bin/bash
 
 playerctl play
-mpc play
+#mpc play

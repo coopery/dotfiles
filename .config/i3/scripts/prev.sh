@@ -1,4 +1,4 @@
 #!/bin/bash
 
 playerctl previous
-mpc prev
+#mpc prev
