@@ -27,4 +27,4 @@ SONG=$(echo "$STATUS" | head -n1)
 
 TIME=$(echo "$STATUS" | tail -n1 | awk '{print $3}')
 
-echo " $SONG ($TIME)"
+echo " $SONG [$TIME]"
