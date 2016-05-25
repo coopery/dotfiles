@@ -1,13 +1,13 @@
 #!/bin/bash
 
-PLAY=""
-PAUSE=""
+PLAY=""
+PAUSE=""
 
 STATUS=$(mpc)
 
 # if mopidy is down
 if [ -z "$STATUS" ]; then
-	echo " mopidy down"
+	echo "mopidy down"
 	exit 0
 fi
 
@@ -15,7 +15,7 @@ STATUS=$(echo "$STATUS" | grep -v '^volume:')
 
 # if not playing
 if [ -z "$STATUS" ]; then
-	echo " nothing playing"
+	echo "nothing playing"
 	exit 0
 fi
 
