@@ -5,13 +5,14 @@ PAUSE=""
 
 STATUS=$(playerctl status)
 
+SYMBOL=""
 # if playing
 if [ "$STATUS" = "Playing" ]; then
-	echo -n $PLAY
+	SYMBOL=$PLAY
 elif [ "$STATUS" = "Paused" ]; then
-	echo -n $PAUSE
+	SYMBOL=$PAUSE
 else
-	echo " Nothing playing."
+	echo "  Nothing playing."
 	exit 0
 fi
 
@@ -22,4 +23,4 @@ ARTIST=$(echo $METADATA | awk -F "xesam:artist': " '{print $2}' | sed "s/<\['//"
 
 SONG=$(echo $METADATA | awk -F "xesam:title': " '{print $2}' | sed "s/<['\"]//" - | sed "s/['\"]>.*//" -)
 
-echo " $ARTIST - $SONG"
+echo "  [$ARTIST - $SONG]  $SYMBOL"
