@@ -143,8 +143,8 @@ fi
 
 export PATH=$PATH:/usr/local/packer
 
-export PATH=$PATH:/usr/local/go/bin
 export GOPATH=$HOME/go
+export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
 
 #[[ "$PS1" ]] && /usr/games/fortune | /usr/games/cowsay -n
 export PS1='\[\e[1;35m\]\u@\h:\w${text}$\[\e[m\] '
