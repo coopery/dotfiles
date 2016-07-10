@@ -113,9 +113,13 @@ if ! shopt -oq posix; then
   fi
 fi
 
+export EDITOR=vim
+
 # Base16 Shell
 BASE16_SHELL="$HOME/.config/base16-shell/base16-default.dark.sh"
 [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
+
+export PATH=$PATH:/usr/local/android-studio/bin
 
 export PATH=$PATH:/usr/local/angstrom/arm/bin
 fg_black="$(tput setaf 0)"
