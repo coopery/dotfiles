@@ -7,16 +7,20 @@ STATUS=$(mpc)
 
 # if mopidy is down
 if [ -z "$STATUS" ]; then
-	echo "mopidy down"
-	exit 0
+  echo "mopidy down"
+  exit 0
 fi
 
 STATUS=$(echo "$STATUS" | grep -v '^volume:')
 
 # if not playing
+if [ -z "$(echo $STATUS | grep -v '[paused]')" ]; then
+  echo "nothing playing"
+  exit 0
+fi
 if [ -z "$STATUS" ]; then
-	echo "nothing playing"
-	exit 0
+  echo "nothing playing"
+  exit 0
 fi
 
 PLAYING=$(echo "$STATUS" | tail -n1 | cut -d ']' -f 1 | tr -d '[')
@@ -27,4 +31,4 @@ SONG=$(echo "$STATUS" | head -n1)
 
 TIME=$(echo "$STATUS" | tail -n1 | awk '{print $3}')
 
-echo " $SONG [$TIME]"
+echo " $SONG - [$TIME]"
