@@ -198,8 +198,8 @@ bindsym XF86AudioNext exec ~/.config/i3/scripts/next.sh
 bindsym XF86AudioPrev exec ~/.config/i3/scripts/prev.sh
 
 exec google-chrome
-exec mopidy
+#exec mopidy
 exec redshift
-#exec_always feh --bg-scale ~/wallpaper
-exec_always ~/.config/i3/wpslideshow.sh
+exec /usr/bin/compton
+exec ~/.config/i3/wpslideshow.sh
 exec_always xrandr --output HDMI1 --off --output LVDS1 --mode 1366x768 --pos 0x0 --rotate normal --output VIRTUAL1 --off --output DP1 --off --output VGA1 --off
