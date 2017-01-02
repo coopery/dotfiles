@@ -1,7 +1,7 @@
 #!/bin/bash
 
 WALLPAPER_DIR="$HOME/Pictures/wallpapers/*"
-INTERVAL="15m"
+INTERVAL="5m"
 
 
 FILES=($WALLPAPER_DIR)
