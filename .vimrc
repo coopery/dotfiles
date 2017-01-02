@@ -36,6 +36,7 @@ set nowrap
 
 " Use jk to exit insert mode
 inoremap jk <esc>
+inoremap kj <esc>
 inoremap <esc> <nop>
 
 " Highlight 80th column
