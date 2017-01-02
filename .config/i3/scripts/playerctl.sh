@@ -12,7 +12,7 @@ if [ "$STATUS" = "Playing" ]; then
 elif [ "$STATUS" = "Paused" ]; then
 	SYMBOL=$PAUSE
 else
-	echo "  Nothing playing."
+	echo "  nothing playing"
 	exit 0
 fi
 
@@ -23,4 +23,4 @@ ARTIST=$(echo $METADATA | awk -F "xesam:artist': " '{print $2}' | sed "s/<\['//"
 
 SONG=$(echo $METADATA | awk -F "xesam:title': " '{print $2}' | sed "s/<['\"]//" - | sed "s/['\"]>.*//" -)
 
-echo "  [$ARTIST - $SONG]  $SYMBOL"
+echo "  [$SONG by $ARTIST]  $SYMBOL"
