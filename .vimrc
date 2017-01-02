@@ -18,6 +18,8 @@ syntax enable
 " Colorscheme
 set background=dark
 colorscheme skittles_berry
+" don't let colorscheme override terminal background
+hi Normal ctermbg=none
 
 " Show relative line numbers
 set number
