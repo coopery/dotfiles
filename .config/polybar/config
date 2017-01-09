@@ -279,7 +279,6 @@ format-discharging-prefix = ${self.icon}
 format-discharging = <ramp-capacity> <label-discharging>
 format-discharging-underline = #ff0000
 format-full-prefix = ${self.icon}
-format-full-prefix-foreground = ${colors.foreground-alt}
 format-full-underline = #55aa55
 ramp-capacity-0 = 
 ramp-capacity-1 = 
